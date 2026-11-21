@@ -1,0 +1,15 @@
+#include <iostream> 
+using namespace std;
+int main(){
+	int game = 1, points, total = 0;
+	cout << "Enter the points for game " << game << " :";
+	cin >> points;
+	while (points != -1){
+		total += points;
+		game++;
+		cout << "Enter the points for game " << game << " :";
+		cin >> points;
+	}
+	cout << "The total points are " << total << endl;
+	return 0;
+}
